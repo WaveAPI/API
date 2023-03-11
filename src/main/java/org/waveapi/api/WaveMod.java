@@ -1,5 +1,7 @@
 package org.waveapi.api;
 
+import java.io.File;
+
 public abstract class WaveMod {
 
     public final String name;
