@@ -19,4 +19,8 @@ public class WaveItem {
     public void addTranslation(String language, String name) {
 
     }
+
+    public void setMaxStackSize(int size) {
+        
+    }
 }
