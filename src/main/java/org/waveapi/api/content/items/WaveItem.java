@@ -13,11 +13,13 @@ public class WaveItem {
 
     public String getId() {return null;}
 
-    public void setModel(ItemModel model) {}
+    public WaveItem setModel(ItemModel model) {return this;}
 
-    public void addTranslation(String language, String name) {}
+    public WaveItem setTab(WaveTab tab) {return this;}
 
-    public void setMaxStackSize(int size) {}
+    public WaveItem addTranslation(String language, String name) {return this;}
+
+    public WaveItem setMaxStackSize(int size) {return this;}
 
     /**
      * Is called on client then on server if it returns a successful use
