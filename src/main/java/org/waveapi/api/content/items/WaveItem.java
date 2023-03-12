@@ -16,7 +16,7 @@ public class WaveItem {
 
     public void addTranslation(String language, String name) {}
 
-    public int getMaxStackSize() {return 0;}
+    public void setMaxStackSize(int size) {}
 
     /**
      * Is called on client then on server if it returns a successful use
