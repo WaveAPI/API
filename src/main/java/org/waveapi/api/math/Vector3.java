@@ -1,6 +1,9 @@
 package org.waveapi.api.math;
 
 public class Vector3 {
+
+    public Vector3 (double x, double y, double z) {}
+
     public Vector3 setX(double x) {return null;}
     public Vector3 setY(double y) {return null;}
     public Vector3 setZ(double z) {return null;}
