@@ -5,22 +5,13 @@ import org.waveapi.api.content.items.models.ItemModel;
 
 public class WaveItem {
 
-    public WaveItem(String id, WaveMod mod) {
-    }
+    public WaveItem(String id, WaveMod mod) {}
 
-    public String getId() {
-        return null;
-    }
+    public String getId() {return null;}
 
-    public void setModel(ItemModel model) {
+    public void setModel(ItemModel model) {}
 
-    }
+    public void addTranslation(String language, String name) {}
 
-    public void addTranslation(String language, String name) {
-
-    }
-
-    public void setMaxStackSize(int size) {
-        
-    }
+    public int getMaxStackSize() {return 0;}
 }
