@@ -13,4 +13,7 @@ public class EntityLiving extends EntityBase {
 
     public void damage(DamageSource source, float amount) {}
 
+    public float getHeadYaw() {return 0f;}
+
+
 }
