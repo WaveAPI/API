@@ -2,7 +2,7 @@ package org.waveapi.api.world.entity;
 
 import org.waveapi.api.math.Vector3;
 
-public class BaseEntity {
+public class EntityBase {
     public int getID() {return 0;}
 
     public String getName() {return null;}

@@ -1,9 +1,9 @@
 package org.waveapi.api.world.entity.living;
 
-import org.waveapi.api.world.entity.BaseEntity;
+import org.waveapi.api.world.entity.EntityBase;
 import org.waveapi.api.world.entity.DamageSource;
 
-public class LivingEntity extends BaseEntity {
+public class EntityLiving extends EntityBase {
 
     public boolean isAlive() {return false;}
 
