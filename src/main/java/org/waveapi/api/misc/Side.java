@@ -1,4 +1,4 @@
-package org.waveapi.api.mics;
+package org.waveapi.api.misc;
 
 public class Side {
     public static boolean isServer() {
