@@ -1,5 +1,6 @@
 package org.waveapi.api.world.entity;
 
+import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;
 
 public class EntityBase {
@@ -14,6 +15,10 @@ public class EntityBase {
 
     public Vector3 getPosition() {return null;}
     public void setPosition(Vector3 position) {}
+
+    public BlockPos getBlockLookingAt(double maxDistance) {return null;}
+
+    public BlockPos getBlockLookingAt(double maxDistance, boolean ignoreTransparent) {return null;}
 
 
     public Vector3 getVelocity() {return null;}
