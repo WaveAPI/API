@@ -5,6 +5,8 @@ import org.waveapi.api.math.Vector3;
 public class EntityBase {
     public int getID() {return 0;}
 
+    public boolean isAlive() {return false;}
+
     public String getName() {return null;}
 
     public float getYaw() {return 0;}
