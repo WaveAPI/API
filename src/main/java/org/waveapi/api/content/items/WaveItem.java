@@ -3,9 +3,9 @@ package org.waveapi.api.content.items;
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.content.items.models.ItemModel;
 import org.waveapi.api.world.entity.living.EntityPlayer;
+import org.waveapi.api.world.inventory.ItemStack;
 import org.waveapi.api.world.inventory.ItemUseResult;
 import org.waveapi.api.world.inventory.UseHand;
-import org.waveapi.api.world.inventory.ItemStack;
 
 public class WaveItem {
 

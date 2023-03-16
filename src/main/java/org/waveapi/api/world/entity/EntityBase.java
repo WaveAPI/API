@@ -1,5 +1,6 @@
 package org.waveapi.api.world.entity;
 
+import org.waveapi.api.content.entities.EntityCreation;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;
 
@@ -23,5 +24,7 @@ public class EntityBase {
 
     public Vector3 getVelocity() {return null;}
     public void setVelocity(Vector3 position) {}
+
+    public EntityBase(EntityCreation e) {}
 
 }

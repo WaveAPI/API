@@ -1,7 +1,5 @@
 package org.waveapi.api.math;
 
-import org.waveapi.api.world.world.BlockState;
-
 public class BlockPos {
 
     public BlockPos (int x, int y, int z) {}
