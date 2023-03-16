@@ -25,6 +25,11 @@ public class EntityBase {
     public Vector3 getVelocity() {return java.util.Objects.requireNonNull(null);}
     public void setVelocity(Vector3 position) {}
 
+    public void destroy() {}
+    public boolean onDamage(DamageSource source, float amount) {return false;}
+
+    public boolean handleAttack() {return false;}
+
     public EntityBase(EntityCreation e) {}
 
 }

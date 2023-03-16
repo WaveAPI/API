@@ -7,14 +7,20 @@ import org.waveapi.api.world.entity.EntityGroup;
 
 public class WaveEntityType<T extends EntityBase> {
 
-    public WaveEntityType (String id, Class<T> entity, WaveEntityRenderer renderer, EntityGroup group, EntityBox box, WaveMod mod) {}
+    public WaveEntityType (String id, Class<T> entity, EntityGroup group, EntityBox box, WaveMod mod) {}
 
-    public WaveEntityType (String id, Class<T> entity, WaveEntityRenderer renderer, EntityBox box, WaveMod mod) {}
+    public WaveEntityType (String id, Class<T> entity, EntityBox box, WaveMod mod) {}
 
-    public WaveEntityType (String id, Class<T> entity, WaveEntityRenderer renderer,  WaveMod mod) {}
+    public WaveEntityType (String id, Class<T> entity,  WaveMod mod) {}
 
     public String getId() {return java.util.Objects.requireNonNull(null);}
 
     public WaveMod getMod() {return java.util.Objects.requireNonNull(null);}
+
+    public void setMaxTrackingRange(int range) {}
+
+    public WaveEntityRenderer getEntityRenderer() {
+        return null;
+    }
 
 }
