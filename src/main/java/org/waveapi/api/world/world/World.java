@@ -1,6 +1,7 @@
 package org.waveapi.api.world.world;
 
 import org.waveapi.api.math.BlockPos;
+import org.waveapi.api.world.entity.EntityBase;
 
 public class World {
 
@@ -15,9 +16,11 @@ public class World {
     }
 
     public BlockState getBlockState(BlockPos pos) {
-        return null;
+        return java.util.Objects.requireNonNull(null);
     }
 
     public boolean isClientSide() {return false;}
+
+    public void addEntity(EntityBase entity) {}
 
 }

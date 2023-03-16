@@ -4,6 +4,6 @@ import org.waveapi.api.content.block.WaveBlock;
 
 public class BlockState {
 
-    public WaveBlock getBlock() {return null;}
+    public WaveBlock getBlock() {return java.util.Objects.requireNonNull(null);}
 
 }

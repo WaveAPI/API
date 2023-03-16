@@ -13,8 +13,8 @@ public class WaveEntityType<T extends EntityBase> {
 
     public WaveEntityType (String id, Class<T> entity, WaveEntityRenderer renderer,  WaveMod mod) {}
 
-    public String getId() {return null;}
+    public String getId() {return java.util.Objects.requireNonNull(null);}
 
-    public WaveMod getMod() {return null;}
+    public WaveMod getMod() {return java.util.Objects.requireNonNull(null);}
 
 }

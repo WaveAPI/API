@@ -6,12 +6,13 @@ import org.waveapi.api.world.entity.living.EntityPlayer;
 import org.waveapi.api.world.inventory.ItemStack;
 import org.waveapi.api.world.inventory.ItemUseResult;
 import org.waveapi.api.world.inventory.UseHand;
+import org.waveapi.api.world.world.World;
 
 public class WaveItem {
 
     public WaveItem(String id, WaveMod mod) {}
 
-    public String getId() {return null;}
+    public String getId() {return java.util.Objects.requireNonNull(null);}
 
     public WaveItem setModel(ItemModel model) {return this;}
 
@@ -24,5 +25,7 @@ public class WaveItem {
     /**
      * Is called on client then on server if it returns a successful use
      */
-    public ItemUseResult onUse(ItemStack item, UseHand hand, EntityPlayer player) {return ItemUseResult.SUCCESS;}
+    public ItemUseResult onUse(ItemStack item, UseHand hand, EntityPlayer player, World world) {return ItemUseResult.SUCCESS;}
+
+    public ItemStack getDefaultStack() {return java.util.Objects.requireNonNull(null);}
 }
