@@ -12,15 +12,14 @@ repositories {
 
 def dir = getProperties().get('dir')
 
-publishing {
+project.publishing {
     publications {
-        mavenJava(MavenPublication) {
+        api(MavenPublication) {
             from components.java
         }
     }
     repositories {
         maven {
-            name = "local"
             url=dir
         }
     }
