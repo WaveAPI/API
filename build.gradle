@@ -10,6 +10,8 @@ repositories {
     mavenCentral()
 }
 
+def dir = getProperties().get('dir')
+
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -17,6 +19,9 @@ publishing {
         }
     }
     repositories {
-        mavenLocal()
+        maven {
+            name = "local"
+            url=dir
+        }
     }
 }
