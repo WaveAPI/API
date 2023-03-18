@@ -3,16 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-group 'org.waveapi'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
 def dir = getProperties().get('dir')
 
 project.publishing {
@@ -27,3 +17,9 @@ project.publishing {
         }
     }
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group 'org.waveapi'
+version '1.0-SNAPSHOT'
