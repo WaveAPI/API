@@ -1,6 +1,6 @@
 package org.waveapi.api.world.world;
 
-import org.waveapi.api.content.block.WaveBlock;
+import org.waveapi.api.content.items.block.WaveBlock;
 
 public class BlockState {
 

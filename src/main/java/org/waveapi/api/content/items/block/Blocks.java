@@ -1,4 +1,4 @@
-package org.waveapi.api.content.block;
+package org.waveapi.api.content.items.block;
 
 public class Blocks { //upon version change, update this file
 	public static final WaveBlock AIR = java.util.Objects.requireNonNull(null);
