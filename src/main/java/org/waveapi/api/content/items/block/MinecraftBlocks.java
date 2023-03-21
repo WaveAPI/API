@@ -1,6 +1,6 @@
 package org.waveapi.api.content.items.block;
 
-public class Blocks { //upon version change, update this file
+public class MinecraftBlocks { //upon version change, update this file
 	public static final WaveBlock AIR = java.util.Objects.requireNonNull(null);
     public static final WaveBlock STONE = java.util.Objects.requireNonNull(null);
     public static final WaveBlock GRANITE = java.util.Objects.requireNonNull(null);
