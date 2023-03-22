@@ -5,8 +5,8 @@ public abstract class NBT {
     public abstract void writeFloat(String name, float f);
     public abstract void writeString(String name, String str);
 
-    public abstract int readInt(String name, int ifNon);
-    public abstract float readFloat(String name, float ifNon);
-    public abstract String readString(String name, String ifNon);
+    public abstract int readInt(String name);
+    public abstract float readFloat(String name);
+    public abstract String readString(String name);
 
 }
