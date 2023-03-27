@@ -1,5 +1,6 @@
 package org.waveapi.api.content.items.block.blockentities;
 
+import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.misc.NBT;
 import org.waveapi.api.world.world.World;
 
@@ -20,5 +21,7 @@ public class WaveTileEntity {
     public World getWorld() {
         return Objects.requireNonNull(null);
     }
+
+    public BlockPos getPosition() { return Objects.requireNonNull(null); }
 
 }

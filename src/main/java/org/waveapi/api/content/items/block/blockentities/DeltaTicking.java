@@ -1,4 +1,4 @@
-package org.waveapi.api.content;
+package org.waveapi.api.content.items.block.blockentities;
 
 /**
  * Not recommended.

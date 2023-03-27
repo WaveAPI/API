@@ -4,9 +4,9 @@ public class Vector3 {
 
     public Vector3 (double x, double y, double z) {}
 
-    public Vector3 setX(double x) {return java.util.Objects.requireNonNull(null);}
-    public Vector3 setY(double y) {return java.util.Objects.requireNonNull(null);}
-    public Vector3 setZ(double z) {return java.util.Objects.requireNonNull(null);}
+    public Vector3 withX(double x) {return java.util.Objects.requireNonNull(null);}
+    public Vector3 withY(double y) {return java.util.Objects.requireNonNull(null);}
+    public Vector3 withZ(double z) {return java.util.Objects.requireNonNull(null);}
 
 
     public double getX() {return 0;}
