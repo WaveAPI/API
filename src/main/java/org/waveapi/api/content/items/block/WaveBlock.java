@@ -26,4 +26,6 @@ public class WaveBlock {
 
     public WaveBlock setTab(WaveTab tab) {return this;}
 
+    public WaveBlock setHardness(int hardness) {return this; }
+
 }
