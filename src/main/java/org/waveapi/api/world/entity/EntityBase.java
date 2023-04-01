@@ -3,6 +3,9 @@ package org.waveapi.api.world.entity;
 import org.waveapi.api.content.entities.EntityCreation;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;
+import org.waveapi.api.world.world.World;
+
+import java.util.Objects;
 
 public class EntityBase {
     public int getID() {return 0;}
@@ -26,10 +29,17 @@ public class EntityBase {
     public void setVelocity(Vector3 position) {}
 
     public void destroy() {}
-    public boolean onDamage(DamageSource source, float amount) {return false;}
 
     public boolean handleAttack() {return false;}
 
     public EntityBase(EntityCreation e) {}
+
+    public World getWorld() {
+        return Objects.requireNonNull(null);
+    }
+
+    public boolean damage(DamageSource source, float amount) {return true;}
+
+    public void tick() {}
 
 }

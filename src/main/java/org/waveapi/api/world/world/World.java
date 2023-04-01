@@ -4,7 +4,6 @@ import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.world.entity.EntityBase;
 
 public class World {
-
     /**
      *
      * @param pos block position
