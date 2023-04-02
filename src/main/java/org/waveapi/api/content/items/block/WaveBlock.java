@@ -7,6 +7,9 @@ import org.waveapi.api.content.items.block.model.BlockModel;
 import org.waveapi.api.content.items.drop.Drop;
 import org.waveapi.api.content.items.drop.ItemDrop;
 import org.waveapi.api.math.BlockPos;
+import org.waveapi.api.world.entity.living.EntityPlayer;
+import org.waveapi.api.world.inventory.ItemUseResult;
+import org.waveapi.api.world.inventory.UseHand;
 import org.waveapi.api.world.world.BlockState;
 import org.waveapi.api.world.world.World;
 
@@ -50,5 +53,6 @@ public class WaveBlock {
     public WaveBlock makeShovelEffective() { return this; }
     public WaveBlock makeHoeEffective() { return this; }
 
+    public ItemUseResult onUse(BlockState blockState, BlockPos pos, World world, EntityPlayer entityPlayer, UseHand useHand) {return null;}
 
 }
