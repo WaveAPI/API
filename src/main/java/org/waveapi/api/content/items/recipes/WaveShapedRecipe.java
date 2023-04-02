@@ -1,6 +1,7 @@
-package org.waveapi.api.content.items;
+package org.waveapi.api.content.items.recipes;
 
 import org.waveapi.api.WaveMod;
+import org.waveapi.api.content.items.WaveItem;
 
 public class WaveShapedRecipe {
 
