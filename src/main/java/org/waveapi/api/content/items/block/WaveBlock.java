@@ -5,6 +5,7 @@ import org.waveapi.api.content.items.WaveItem;
 import org.waveapi.api.content.items.WaveTab;
 import org.waveapi.api.content.items.block.model.BlockModel;
 import org.waveapi.api.content.items.drop.Drop;
+import org.waveapi.api.content.items.drop.ItemDrop;
 import org.waveapi.api.world.world.BlockState;
 
 import java.util.Objects;
@@ -36,5 +37,7 @@ public class WaveBlock {
     public WaveBlock setDrop(Drop[] drop) {return this; }
 
     public WaveItem getItem() {return Objects.requireNonNull(null); }
+
+    public ItemDrop getAsSimpleDrop() {return Objects.requireNonNull(null); }
 
 }
