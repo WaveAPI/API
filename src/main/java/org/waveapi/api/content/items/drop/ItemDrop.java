@@ -10,6 +10,6 @@ public class ItemDrop extends Drop {
     public ItemDrop(String item) {}
     public ItemDrop(WaveItem item) {}
 
-    public ItemDrop apply() {return this; }
+    public ItemDrop apply(DropFunction function) {return this; }
 
 }
