@@ -39,5 +39,10 @@ public class WaveBlock {
     public WaveItem getItem() {return Objects.requireNonNull(null); }
 
     public ItemDrop getAsSimpleDrop() {return Objects.requireNonNull(null); }
+    public WaveBlock setMiningLevelRequired(int level) { return this; }
+    public WaveBlock makePickaxeEffective() { return this; }
+    public WaveBlock makeAxeEffective() { return this; }
+    public WaveBlock makeShovelEffective() { return this; }
+    public WaveBlock makeHoeEffective() { return this; }
 
 }
