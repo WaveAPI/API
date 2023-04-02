@@ -3,6 +3,7 @@ package org.waveapi.api.content.items.block;
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.content.items.WaveTab;
 import org.waveapi.api.content.items.block.model.BlockModel;
+import org.waveapi.api.world.inventory.ItemStack;
 import org.waveapi.api.world.world.BlockState;
 
 public class WaveBlock {
@@ -27,5 +28,8 @@ public class WaveBlock {
     public WaveBlock setTab(WaveTab tab) {return this;}
 
     public WaveBlock setHardness(float hardness) {return this; }
+
+    public WaveBlock setDrop() {return this; }
+    public WaveBlock setDrop(ItemStack[] drop) {return this; }
 
 }
