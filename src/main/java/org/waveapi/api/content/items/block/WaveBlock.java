@@ -6,7 +6,9 @@ import org.waveapi.api.content.items.WaveTab;
 import org.waveapi.api.content.items.block.model.BlockModel;
 import org.waveapi.api.content.items.drop.Drop;
 import org.waveapi.api.content.items.drop.ItemDrop;
+import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.world.world.BlockState;
+import org.waveapi.api.world.world.World;
 
 import java.util.Objects;
 
@@ -22,6 +24,9 @@ public class WaveBlock {
     public boolean hasItem() {
         return true;
     }
+
+    public void enableRandomTick() {}
+    public void onRandomTick(BlockState state, BlockPos pos, World world) {}
 
     public WaveBlock setHasItem(boolean hasItem) {return this;}
 
@@ -44,5 +49,6 @@ public class WaveBlock {
     public WaveBlock makeAxeEffective() { return this; }
     public WaveBlock makeShovelEffective() { return this; }
     public WaveBlock makeHoeEffective() { return this; }
+
 
 }
