@@ -44,6 +44,9 @@ public class WaveBlock {
     public WaveBlock setDrop() {return this; }
     public WaveBlock setDrop(Drop[] drop) {return this; }
 
+    public WaveBlock setDrop(Drop drop) {return this; }
+
+
     public WaveItem getItem() {return Objects.requireNonNull(null); }
 
     public ItemDrop getAsSimpleDrop() {return Objects.requireNonNull(null); }
