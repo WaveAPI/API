@@ -1,7 +1,10 @@
 package org.waveapi.api.world.world;
 
+import org.waveapi.api.content.items.block.blockentities.WaveTileEntity;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.world.entity.EntityBase;
+
+import java.util.Objects;
 
 public class World {
     /**
@@ -21,5 +24,7 @@ public class World {
     public boolean isClientSide() {return false;}
 
     public void addEntity(EntityBase entity) {}
+
+    public WaveTileEntity getTileEntity(BlockPos pos) {return Objects.requireNonNull(null);}
 
 }
