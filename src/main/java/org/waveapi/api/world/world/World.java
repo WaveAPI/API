@@ -25,6 +25,6 @@ public class World {
 
     public void addEntity(EntityBase entity) {}
 
-    public <T extends WaveTileEntity> T getTileEntity(BlockPos pos) {return Objects.requireNonNull(null);}
+    public <T extends WaveTileEntity> T getTileEntity(BlockPos pos, Class<T> clazz) {return Objects.requireNonNull(null);}
 
 }
