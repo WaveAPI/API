@@ -1,6 +1,7 @@
 package org.waveapi.api.content.items.armour;
 
 import org.waveapi.api.content.items.recipes.ingredients.Ingredient;
+import org.waveapi.api.file.texture.Texture;
 
 public class ArmourMaterial {
 
@@ -30,5 +31,7 @@ public class ArmourMaterial {
 
     public ArmourMaterial setKnockbackResistance(float resistance) {return this;}
 
+    public ArmourMaterial setLayer1Texture(Texture texture) {return this;}
+    public ArmourMaterial setLayer2Texture(Texture texture) {return this;}
 
 }
