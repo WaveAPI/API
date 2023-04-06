@@ -31,7 +31,7 @@ public class WaveArmourMaterial {
 
     public WaveArmourMaterial setKnockbackResistance(float resistance) {return this;}
 
-    public WaveArmourMaterial setLayer1Texture(Texture texture) {return this;}
-    public WaveArmourMaterial setLayer2Texture(Texture texture) {return this;}
+    public WaveArmourMaterial setHelmetChestplateBootsTexture(Texture texture) {return this;}
+    public WaveArmourMaterial setLeggingsTexture(Texture texture) {return this;}
 
 }
