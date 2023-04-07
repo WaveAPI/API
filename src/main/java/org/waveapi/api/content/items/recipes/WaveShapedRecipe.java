@@ -10,4 +10,6 @@ public class WaveShapedRecipe {
 
     public WaveShapedRecipe addIngredient(char symbol, String id) {return this;}
 
+    public WaveShapedRecipe setResultCount(int count) {return this;}
+
 }
