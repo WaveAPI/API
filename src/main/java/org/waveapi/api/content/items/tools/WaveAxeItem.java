@@ -9,7 +9,7 @@ import org.waveapi.api.world.world.BlockState;
 import org.waveapi.api.world.world.World;
 
 public class WaveAxeItem extends WaveItem {
-    public WaveAxeItem(String id, WaveMod mod, WaveToolMaterial material) {
+    public WaveAxeItem(String id, WaveToolMaterial material, WaveMod mod) {
         super(id, mod);
     }
 
