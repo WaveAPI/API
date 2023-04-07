@@ -9,7 +9,7 @@ import org.waveapi.api.world.world.BlockState;
 import org.waveapi.api.world.world.World;
 
 public class WaveShovelItem extends WaveItem {
-    public WaveShovelItem(String id, WaveMod mod, WaveToolMaterial material) {
+    public WaveShovelItem(String id, WaveToolMaterial material, WaveMod mod) {
         super(id, mod);
     }
 
