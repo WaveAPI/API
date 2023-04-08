@@ -31,14 +31,8 @@ public class WaveBlock extends WaveItem {
     public WaveBlock addTranslation(String language, String name) {return this;}
     public WaveBlock setModels(BlockModel model) {return this;}
 
-    public boolean hasItem() {
-        return true;
-    }
-
     public void enableRandomTick() {}
     public void onRandomTick(BlockState state, BlockPos pos, World world) {}
-
-    public WaveBlock setHasItem(boolean hasItem) {return this;}
 
     public BlockState getDefaultState() {
         return java.util.Objects.requireNonNull(null);
