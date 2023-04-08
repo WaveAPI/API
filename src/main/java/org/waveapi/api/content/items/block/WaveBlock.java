@@ -18,11 +18,15 @@ import org.waveapi.api.world.world.World;
 import java.util.List;
 import java.util.Objects;
 
-public class WaveBlock {
+public class WaveBlock extends WaveItem {
 
-    public WaveBlock(String id, WaveMod mod, BlockMaterial material) { }
+    public WaveBlock(String id, WaveMod mod, BlockMaterial material) {
+        super(id, mod);
+    }
 
-    public WaveBlock(String id, WaveMod mod) { }
+    public WaveBlock(String id, WaveMod mod) {
+        super(id, mod);
+    }
 
     public WaveBlock addTranslation(String language, String name) {return this;}
     public WaveBlock setModels(BlockModel model) {return this;}
@@ -48,10 +52,6 @@ public class WaveBlock {
     public WaveBlock setDrop(Drop[] drop) {return this; }
 
     public WaveBlock setDrop(Drop drop) {return this; }
-
-
-    public WaveItem getItem() {return Objects.requireNonNull(null); }
-
     public ItemDrop getAsSimpleDrop() {return Objects.requireNonNull(null); }
     public WaveBlock setMiningLevelRequired(int level) { return this; }
     public WaveBlock makePickaxeEffective() { return this; }
