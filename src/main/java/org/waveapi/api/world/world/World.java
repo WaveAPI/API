@@ -30,6 +30,7 @@ public class World {
     public <T extends WaveTileEntity> T getTileEntity(BlockPos pos, Class<T> clazz) {return Objects.requireNonNull(null);}
 
     public void breakBlock(BlockPos pos, boolean shouldDrop) {}
+    public void breakBlock(BlockPos pos, boolean shouldDrop, EntityBase entity) {}
 
     public void dropItem(Vector3 position, ItemStack stack) {}
 
