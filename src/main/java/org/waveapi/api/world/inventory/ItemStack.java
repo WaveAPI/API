@@ -12,4 +12,6 @@ public class ItemStack {
     public WaveItem getItem() {return java.util.Objects.requireNonNull(null);}
     public void damage(int amount, EntityPlayer player) {}
 
+    public boolean is(WaveItem item) {return false;}
+
 }
