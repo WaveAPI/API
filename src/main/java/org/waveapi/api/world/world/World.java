@@ -27,4 +27,6 @@ public class World {
 
     public <T extends WaveTileEntity> T getTileEntity(BlockPos pos, Class<T> clazz) {return Objects.requireNonNull(null);}
 
+    public void breakBlock(BlockPos pos, boolean shouldDrop) {}
+
 }
