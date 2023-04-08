@@ -35,5 +35,6 @@ public class WaveItem {
 
     public List<Text> addToolTip(ItemStack stack) {return Objects.requireNonNull(null);}
 
+    public void setDurability(int durability) {}
 
 }
