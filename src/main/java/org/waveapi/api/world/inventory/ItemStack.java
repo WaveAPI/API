@@ -7,6 +7,8 @@ public class ItemStack {
 
     public String getName() {return java.util.Objects.requireNonNull(null);}
     public int getAmount() {return 0;}
+
+    public int getMaxAmount() {return 64;}
     public void setAmount(int amount) {}
 
     public WaveItem getItem() {return java.util.Objects.requireNonNull(null);}
