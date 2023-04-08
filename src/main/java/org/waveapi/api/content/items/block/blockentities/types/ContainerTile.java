@@ -8,7 +8,7 @@ public interface ContainerTile {
     org.waveapi.api.world.inventory.ItemStack getStack(int slot);
     void setStack(int slot, org.waveapi.api.world.inventory.ItemStack stack);
 
-    default int giveItem(int slot, org.waveapi.api.world.inventory.ItemStack stack) {
+    default int giveItem(org.waveapi.api.world.inventory.ItemStack stack) {
         return 0;
     }
 
