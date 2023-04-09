@@ -2,6 +2,7 @@ package org.waveapi.api.content.items;
 
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.content.items.models.ItemModel;
+import org.waveapi.api.content.tags.Tag;
 import org.waveapi.api.misc.Text;
 import org.waveapi.api.world.entity.living.EntityPlayer;
 import org.waveapi.api.world.inventory.ItemStack;
@@ -17,6 +18,8 @@ public class WaveItem {
     public WaveItem(String id, WaveMod mod) {}
 
     public String getId() {return java.util.Objects.requireNonNull(null);}
+
+    public WaveItem tag(Tag tag) {return this;}
 
     public WaveItem setModel(ItemModel model) {return this;}
 
