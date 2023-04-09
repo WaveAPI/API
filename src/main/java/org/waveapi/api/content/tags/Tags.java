@@ -29,6 +29,7 @@ public class Tags {
 
     public static final Tag INGOT = Objects.requireNonNull(null);
     public static final Tag COBBLESTONE = Objects.requireNonNull(null);
+    public static final Tag GEM = Objects.requireNonNull(null);
 
     //</editor-fold>
 
