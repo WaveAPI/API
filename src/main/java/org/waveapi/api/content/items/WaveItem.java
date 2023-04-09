@@ -38,4 +38,8 @@ public class WaveItem {
     public int getMaxAmount() {return 64;}
     public void setDurability(int durability) {}
 
-}
+    public WaveItem makeFood(int hunger, float saturation) {return this;}
+    public WaveItem makeFood(int hunger, float saturation, boolean isAlwaysEdible) {return this;}
+    public WaveItem makeFood(int hunger, float saturation, boolean isAlwaysEdible, boolean isMeat, boolean isASnack) {return this;}
+
+    }
