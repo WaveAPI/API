@@ -18,6 +18,10 @@ public class Vector3 {
     public Vector3 addZ(double z) {return java.util.Objects.requireNonNull(null);}
 
     public Vector3 add(Vector3 vector) {return java.util.Objects.requireNonNull(null);}
+
+    public Vector3 multiply(Vector3 vector) {return java.util.Objects.requireNonNull(null);}
+    public Vector3 multiply(double x, double y, double z) {return java.util.Objects.requireNonNull(null);}
+
     public Vector3 add(double x, double y, double z) {return java.util.Objects.requireNonNull(null);}
 
     public Vector3 subtract(double x, double y, double z) {return java.util.Objects.requireNonNull(null);}
