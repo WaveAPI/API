@@ -9,7 +9,7 @@ public class TranslatedText extends Text {
     public TranslatedText addTranslation(String language, String translation) {return this;}
 
     /**
-     * Replaces % in translation with objects
+     * Think String.format()
      */
     public Text withValues(Object... objects) {return this;}
 
