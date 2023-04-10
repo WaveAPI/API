@@ -26,6 +26,7 @@ public class WaveItem {
     public WaveItem setTab(WaveTab tab) {return this;}
 
     public WaveItem addTranslation(String language, String name) {return this;}
+    public WaveItem setRarity(Rarity rarity) {return this;}
 
     public WaveItem setMaxStackSize(int size) {return this;}
 
