@@ -6,6 +6,10 @@ import org.waveapi.api.world.entity.living.EntityPlayer;
 
 public class ItemStack {
 
+    public ItemStack (WaveItem item) {
+
+    }
+
     public String getName() {return java.util.Objects.requireNonNull(null);}
     public int getAmount() {return 0;}
 
@@ -16,7 +20,6 @@ public class ItemStack {
 
     public WaveItem getItem() {return java.util.Objects.requireNonNull(null);}
     public void damage(int amount, EntityPlayer player) {}
-
     public boolean is(WaveItem item) {return false;}
 
 }
