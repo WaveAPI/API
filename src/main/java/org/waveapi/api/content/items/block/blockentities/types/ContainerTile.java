@@ -1,5 +1,7 @@
 package org.waveapi.api.content.items.block.blockentities.types;
 
+import org.waveapi.api.world.inventory.ItemStack;
+
 import java.util.Objects;
 
 public interface ContainerTile {
@@ -9,6 +11,14 @@ public interface ContainerTile {
     void setStack(int slot, org.waveapi.api.world.inventory.ItemStack stack);
 
     default int giveItem(org.waveapi.api.world.inventory.ItemStack stack) {
+        return 0;
+    }
+
+    default boolean isItemAllowedInSlot(int slot, ItemStack stack) {
+        return true;
+    }
+
+    default int giveItem(int slot, org.waveapi.api.world.inventory.ItemStack stack) {
         return 0;
     }
 
