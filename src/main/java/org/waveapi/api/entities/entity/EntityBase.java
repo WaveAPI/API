@@ -1,5 +1,6 @@
 package org.waveapi.api.entities.entity;
 
+import org.waveapi.api.entities.DamageSource;
 import org.waveapi.api.entities.EntityCreation;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;

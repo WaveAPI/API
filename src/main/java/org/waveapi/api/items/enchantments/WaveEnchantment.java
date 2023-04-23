@@ -1,7 +1,7 @@
-package org.waveapi.api.content.items.enchantments;
+package org.waveapi.api.items.enchantments;
 
 import org.waveapi.api.WaveMod;
-import org.waveapi.api.content.items.ItemAccepter;
+import org.waveapi.api.items.ItemAccepter;
 
 public class WaveEnchantment {
 

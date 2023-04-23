@@ -1,4 +1,4 @@
-package org.waveapi.api.content.items;
+package org.waveapi.api.items;
 
 import java.util.Objects;
 
