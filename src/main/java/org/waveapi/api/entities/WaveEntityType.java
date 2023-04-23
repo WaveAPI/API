@@ -2,7 +2,6 @@ package org.waveapi.api.entities;
 
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.entities.entity.EntityBase;
-import org.waveapi.api.entities.entity.EntityGroup;
 import org.waveapi.api.entities.renderer.WaveEntityRenderer;
 
 public class WaveEntityType<T extends EntityBase> {

@@ -1,4 +1,4 @@
-package org.waveapi.api.entities.entity;
+package org.waveapi.api.entities;
 
 public enum EntityGroup {
     AMBIENT,
