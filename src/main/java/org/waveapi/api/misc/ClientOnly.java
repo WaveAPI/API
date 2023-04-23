@@ -1,6 +1,6 @@
 package org.waveapi.api.misc;
 
-import org.waveapi.api.world.entity.living.EntityPlayer;
+import org.waveapi.api.entities.entity.living.EntityPlayer;
 
 import java.util.Objects;
 
