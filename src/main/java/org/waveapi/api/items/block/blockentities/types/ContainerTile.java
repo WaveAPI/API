@@ -1,16 +1,16 @@
 package org.waveapi.api.items.block.blockentities.types;
 
-import org.waveapi.api.world.inventory.ItemStack;
+import org.waveapi.api.items.inventory.ItemStack;
 
 import java.util.Objects;
 
 public interface ContainerTile {
 
     int getSize();
-    org.waveapi.api.world.inventory.ItemStack getStack(int slot);
-    void setStack(int slot, org.waveapi.api.world.inventory.ItemStack stack);
+    ItemStack getStack(int slot);
+    void setStack(int slot, ItemStack stack);
 
-    default int giveItem(org.waveapi.api.world.inventory.ItemStack stack) {
+    default int giveItem(ItemStack stack) {
         return 0;
     }
 
@@ -18,15 +18,15 @@ public interface ContainerTile {
         return true;
     }
 
-    default int giveItem(int slot, org.waveapi.api.world.inventory.ItemStack stack) {
+    default int giveItem(int slot, ItemStack stack) {
         return 0;
     }
 
-    default org.waveapi.api.world.inventory.ItemStack take(int slot, int amount) {
+    default ItemStack take(int slot, int amount) {
         return Objects.requireNonNull(null);
     }
 
-    default org.waveapi.api.world.inventory.ItemStack take(int slot) {
+    default ItemStack take(int slot) {
         return Objects.requireNonNull(null);
     }
 }
