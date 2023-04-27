@@ -1,6 +1,8 @@
 package org.waveapi.api.items.enchantments;
 
 import org.waveapi.api.WaveMod;
+import org.waveapi.api.entities.entity.EntityBase;
+import org.waveapi.api.entities.entity.living.EntityLiving;
 import org.waveapi.api.items.ItemAccepter;
 
 public class WaveEnchantment {
@@ -9,15 +11,20 @@ public class WaveEnchantment {
 
     }
 
-    public void addEquipmentSlot(equipmentSlot slot) {
-
+    public WaveEnchantment addEquipmentSlot(equipmentSlot slot) {
+        return this;
     }
 
-    public void addAllowedItemsAccepter(ItemAccepter accepter) {
-
+    public WaveEnchantment addAllowedItemsAccepter(ItemAccepter accepter) {
+        return this;
     }
 
+    /**
+     * This function is called whenever an entity is attacked with an item that has this enchantment
+     */
+    public void onUsedToAttack(EntityLiving user, EntityBase base, int level) {
 
+    }
 
     public enum equipmentSlot {
         MAIN_HAND,
