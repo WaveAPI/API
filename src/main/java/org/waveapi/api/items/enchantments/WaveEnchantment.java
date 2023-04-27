@@ -26,6 +26,14 @@ public class WaveEnchantment {
 
     }
 
+    public WaveEnchantment setMaxLevel() {
+        return this;
+    }
+
+    public int getMaxLevel() {
+        return 1;
+    }
+
     public enum equipmentSlot {
         MAIN_HAND,
         OFF_HAND,
