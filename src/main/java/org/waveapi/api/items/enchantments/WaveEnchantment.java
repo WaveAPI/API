@@ -22,9 +22,15 @@ public class WaveEnchantment {
     /**
      * This function is called whenever an entity is attacked with an item that has this enchantment
      */
-    public void onUsedToAttack(EntityLiving user, EntityBase base, int level) {
+    public void onUsedToAttack(EntityLiving attacker, EntityBase attacked, int level) {
 
     }
+
+    public WaveEnchantment makeTreasure() {return this;}
+    public WaveEnchantment makeCursed() {return this;}
+
+    public WaveEnchantment makeAvailableInEnchantingTable() {return this;}
+    public WaveEnchantment makeAvailableInVillagerTrades() {return this;}
 
     public WaveEnchantment setMaxLevel() {
         return this;
