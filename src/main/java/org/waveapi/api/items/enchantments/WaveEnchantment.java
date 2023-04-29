@@ -4,6 +4,7 @@ import org.waveapi.api.WaveMod;
 import org.waveapi.api.entities.entity.EntityBase;
 import org.waveapi.api.entities.entity.living.EntityLiving;
 import org.waveapi.api.items.ItemAccepter;
+import org.waveapi.api.items.Rarity;
 
 public class WaveEnchantment {
 
@@ -16,6 +17,10 @@ public class WaveEnchantment {
     }
 
     public WaveEnchantment addAllowedItemsAccepter(ItemAccepter accepter) {
+        return this;
+    }
+
+    public WaveEnchantment setRarity(Rarity rarity) {
         return this;
     }
 
