@@ -3,7 +3,7 @@ package org.waveapi.api.items;
 import java.util.Objects;
 
 public interface ItemAccepter {
-    boolean canEnchant(WaveItem item);
+    boolean validItem(WaveItem item);
 
     ItemAccepter ARMOUR = Objects.requireNonNull(null);
     ItemAccepter MElEE_WEAPON = Objects.requireNonNull(null);
