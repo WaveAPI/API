@@ -3,6 +3,7 @@ package org.waveapi.api.items.enchantments;
 import org.waveapi.api.WaveMod;
 import org.waveapi.api.entities.entity.EntityBase;
 import org.waveapi.api.entities.entity.living.EntityLiving;
+import org.waveapi.api.items.EquipmentSlot;
 import org.waveapi.api.items.ItemAccepter;
 import org.waveapi.api.items.Rarity;
 
@@ -12,7 +13,7 @@ public class WaveEnchantment {
 
     }
 
-    public WaveEnchantment addEquipmentSlot(equipmentSlot slot) {
+    public WaveEnchantment addEquipmentSlot(EquipmentSlot slot) {
         return this;
     }
 
@@ -45,12 +46,4 @@ public class WaveEnchantment {
         return 1;
     }
 
-    public enum equipmentSlot {
-        MAIN_HAND,
-        OFF_HAND,
-        HELMET,
-        CHESTPLATE,
-        LEGGINGS,
-        BOOTS
-    }
 }
