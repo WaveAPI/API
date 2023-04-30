@@ -28,7 +28,7 @@ public class WaveEnchantment {
     /**
      * This function is called whenever an entity is attacked with an item that has this enchantment
      */
-    public void onUsedToAttack(EntityLiving attacker, EntityBase attacked, int level) {
+    public void onAttack(EntityLiving attacker, EntityBase attacked, int level) {
 
     }
 
