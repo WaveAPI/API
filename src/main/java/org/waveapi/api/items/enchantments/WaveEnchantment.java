@@ -32,6 +32,10 @@ public class WaveEnchantment {
 
     }
 
+    public WaveEnchantment addTranslation(String language, String name) {
+        return this;
+    }
+
     public WaveEnchantment makeTreasure() {return this;}
     public WaveEnchantment makeCursed() {return this;}
 
