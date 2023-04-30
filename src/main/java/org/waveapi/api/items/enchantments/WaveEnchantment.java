@@ -4,20 +4,15 @@ import org.waveapi.api.WaveMod;
 import org.waveapi.api.entities.entity.EntityBase;
 import org.waveapi.api.entities.entity.living.EntityLiving;
 import org.waveapi.api.items.EquipmentSlot;
-import org.waveapi.api.items.ItemAccepter;
 import org.waveapi.api.items.Rarity;
 
 public class WaveEnchantment {
 
-    public WaveEnchantment (String name, WaveMod mod) {
+    public WaveEnchantment (String id, EnchantmentTarget target, WaveMod mod) {
 
     }
 
     public WaveEnchantment addEquipmentSlot(EquipmentSlot slot) {
-        return this;
-    }
-
-    public WaveEnchantment addAllowedItemsAccepter(ItemAccepter accepter) {
         return this;
     }
 
