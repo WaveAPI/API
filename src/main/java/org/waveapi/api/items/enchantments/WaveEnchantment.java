@@ -38,7 +38,7 @@ public class WaveEnchantment {
     public WaveEnchantment makeAvailableInEnchantingTable() {return this;}
     public WaveEnchantment makeAvailableInVillagerTrades() {return this;}
 
-    public WaveEnchantment setMaxLevel() {
+    public WaveEnchantment setMaxLevel(int level) {
         return this;
     }
 
