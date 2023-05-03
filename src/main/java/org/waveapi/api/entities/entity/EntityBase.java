@@ -43,4 +43,8 @@ public class EntityBase {
 
     public void tick() {}
 
+    public <T> T as(Class<T> type) {
+        return Objects.requireNonNull(null);
+    }
+
 }
