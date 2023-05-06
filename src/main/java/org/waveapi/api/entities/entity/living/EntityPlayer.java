@@ -18,4 +18,11 @@ public abstract class EntityPlayer extends EntityLiving {
 
     public Vector3 getLookVector() {return Objects.requireNonNull(null);}
 
+    /**
+     * @return 0.0 - 1.0 float that represents the Cooldown progress
+     */
+    public float getCoolDownProgress() {
+        return 0.0f;
+    }
+
 }

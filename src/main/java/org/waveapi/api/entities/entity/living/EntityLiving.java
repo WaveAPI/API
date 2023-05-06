@@ -15,5 +15,4 @@ public class EntityLiving extends EntityBase {
 
     public float getHeadYaw() {return 0f;}
 
-
 }
