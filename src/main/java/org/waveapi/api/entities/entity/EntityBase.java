@@ -1,7 +1,7 @@
 package org.waveapi.api.entities.entity;
 
-import kotlin.reflect.KClass;
 import org.waveapi.api.entities.DamageSource;
+import org.waveapi.api.entities.EntityCastingType;
 import org.waveapi.api.entities.EntityCreation;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;
@@ -44,10 +44,8 @@ public class EntityBase {
 
     public void tick() {}
 
-    public <T> T to(Class<T> type) {
+    public <T> T to(EntityCastingType<T> type) {
         return Objects.requireNonNull(null);
     }
-
-
 
 }

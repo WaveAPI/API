@@ -1,8 +1,9 @@
 package org.waveapi.api.kotlin.entities.entity
 
+import org.waveapi.api.entities.EntityCastingType
 import org.waveapi.api.entities.entity.EntityBase
-import kotlin.reflect.KClass
+import java.util.*
 
-fun <T : Any> EntityBase?.to(kClass: KClass<T>): T? {
-    return null
+fun <T> EntityBase?.toType(type: EntityCastingType<T>?): T? {
+    return Objects.requireNonNull<T?>(null)
 }

@@ -1,10 +1,13 @@
 package org.waveapi.api.items.block.blockentities.types;
 
+import org.waveapi.api.items.block.blockentities.BlockEntityCastingType;
 import org.waveapi.api.items.inventory.ItemStack;
 
 import java.util.Objects;
 
 public interface ContainerTile {
+
+    BlockEntityCastingType<ContainerTile> type = Objects.requireNonNull(null);
 
     int getSize();
     ItemStack getStack(int slot);

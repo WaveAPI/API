@@ -1,12 +1,17 @@
 package org.waveapi.api.entities.entity.living;
 
+import org.waveapi.api.entities.EntityCastingType;
 import org.waveapi.api.items.inventory.ItemStack;
 import org.waveapi.api.math.Vector3;
 import org.waveapi.api.misc.Text;
 
+import javax.swing.text.html.parser.Entity;
 import java.util.Objects;
 
 public abstract class EntityPlayer extends EntityLiving {
+
+    public final static EntityCastingType<EntityPlayer> type = Objects.requireNonNull(null);
+
     public EntityPlayer() {super(null);}
     public void sendMessage(String message) {}
 

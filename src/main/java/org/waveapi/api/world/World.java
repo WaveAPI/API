@@ -1,6 +1,8 @@
 package org.waveapi.api.world;
 
 import org.waveapi.api.entities.entity.EntityBase;
+import org.waveapi.api.items.block.blockentities.BlockEntityCastingType;
+import org.waveapi.api.items.block.blockentities.WaveTileEntity;
 import org.waveapi.api.items.inventory.ItemStack;
 import org.waveapi.api.math.BlockPos;
 import org.waveapi.api.math.Vector3;
@@ -27,6 +29,7 @@ public class World {
     public void addEntity(EntityBase entity) {}
 
     public <T> T getTileEntity(BlockPos pos, Class<T> clazz) {return Objects.requireNonNull(null);}
+    public <T> T getTileEntity(BlockPos pos, BlockEntityCastingType<T> type) {return Objects.requireNonNull(null);}
 
     public void breakBlock(BlockPos pos, boolean shouldDrop) {}
     public void breakBlock(BlockPos pos, boolean shouldDrop, EntityBase entity) {}
