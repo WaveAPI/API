@@ -7,6 +7,7 @@ import java.io.InputStream;
 public abstract class WaveMod {
 
     public WaveMod(String name, String version) {}
+    public WaveMod() {}
 
     public void init() {}
 
