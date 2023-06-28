@@ -36,4 +36,11 @@ public class World {
 
     public void dropItem(Vector3 position, ItemStack stack) {}
 
+    /**
+     *
+     * @param pos position of block
+     * @return returns true if the block has any collision with the player.
+     */
+    public boolean isBlockSolid(BlockPos pos) {return false;}
+
 }
