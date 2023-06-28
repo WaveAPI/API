@@ -12,7 +12,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Run build with Gradle Wrapper
-        run: ./gradlew publishToMavenLocal -Pdir="./out"
+        run: ./gradlew publishToMavenLocal -Pdir="./_site"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
   deploy:
     name: github-pages
     runs-on: ubuntu-latest
@@ -21,5 +23,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          path: "./out"
