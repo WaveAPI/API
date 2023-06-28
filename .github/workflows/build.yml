@@ -11,6 +11,7 @@ jobs:
       - name: Run build with Gradle Wrapper
         run: ./gradlew publishToMavenLocal -Pdir="./out"
   deploy:
+    needs: build
     name: github-pages
     runs-on: ubuntu-latest
     steps:
