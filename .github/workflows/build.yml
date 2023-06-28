@@ -17,8 +17,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
   deploy:
     permissions:
-      contents: 'read'
-      id-token: 'write'
+      pages: write
+      id-token: write
     name: github-pages
     runs-on: ubuntu-latest
     needs: build
